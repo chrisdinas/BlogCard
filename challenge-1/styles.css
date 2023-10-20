@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Sora', sans-serif;
+}
+
+:root {
+    --border-radius: 15px;
+    --container-background-color: rgb(250, 250, 249);
+    --btn-color: rgb(227, 215, 249);
+    --btn-text-color: rgb(127, 63, 217);
+    --heading-color: rgb(34, 40, 56);
+    --p-text-color: rgb(109, 114, 126); 
+}
+
+.card {
+    height: 100vh;
+    background-color: var(--container-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 400px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+
+img {
+    max-width: 360px;
+    margin: 20px;
+    border-radius: var(--border-radius);
+}
+
+.main-content {
+    margin: 0 20px 20px 20px;
+}
+
+.main-content span {
+    color: var(--btn-text-color);
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--btn-color);
+    padding: 5px 20px;
+    border-radius: var(--border-radius);
+}
+
+.main-content h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+    color: var(--heading-color);
+}
+
+.main-content p {
+    font-weight: 200;
+    font-size: 16px;
+    color: var(--p-text-color);
+}
+
+.line-break {
+    border-bottom: 1px solid var(--p-text-color);
+    border-color: rgb(230, 234, 240);
+}
+
+.author {
+    margin: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--p-text-color);
+}
